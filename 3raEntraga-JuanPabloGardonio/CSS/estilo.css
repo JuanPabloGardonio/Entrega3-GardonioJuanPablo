@@ -1,0 +1,316 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos pantalla celulares */
+
+@media screen and (min-width: 320px){
+
+/* Estilos del menu */
+
+.menuLinks{
+    justify-content: space-evenly;
+    margin-left: 5rem;
+    gap: 3rem;
+}
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.nav-link{
+    box-shadow: 3px 3px blueviolet;
+    transform: scale(0.9);
+}
+
+.menuTitulo{
+    font-size: 55px;
+    text-align: left;
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.menuMenu{
+    height: auto;
+    width: auto;
+    display: flex;
+    background-color: rgb(205, 24, 24);
+    
+}
+
+/* Background de todas las paginas */
+
+#fondoWos{
+    background-image: linear-gradient(to bottom, rgb(160, 0, 160), rgb(255, 90, 118));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fondoWosContacto{
+    background-image: linear-gradient(to bottom, rgb(160, 0, 160), rgb(255, 90, 118));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+#fondoWosRedes{
+    background-image: linear-gradient(to bottom, rgb(160, 0, 160), rgb(255, 90, 118));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+/*Estilos del footer */
+
+body footer{
+    width: auto;
+    text-align: center;
+    margin-top: 100px;
+    padding: 30px;
+    font-size: 10px;
+}
+
+/* Estilos de la page merch */
+
+.tituloVinilo{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.imagenVinilo{
+    display: flex;
+    justify-content: center;
+}
+
+.texto1{
+    display: none;
+}
+
+.texto2{
+    display: none;
+}
+
+.viniloCaravana{
+    width: 40%;
+}
+
+.titulo1{
+    text-align: center
+}
+
+.remeraCaravana{
+    width: 60%;
+    margin-left: 7rem;
+}
+
+.titulo2{
+    text-align: center;
+}
+.remeraOscuro{
+    width: 60%;
+    margin-left: 7rem;
+}
+
+.titulo3{
+    text-align: center;
+}
+
+.remeraWos{
+    width: 50%;
+    margin-left: 7rem;
+}
+
+/* Estilos de la page discografia */
+
+/* Disco Caravana */
+
+.discoCaravana{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "tituloCaravana cancionesCaravana"
+    "portadaCaravanaImg cancionesCaravana"
+    ;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tituloCaravana{
+    grid-area: tituloCaravana;
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+}
+
+.portadaCaravanaImg{
+    grid-area: portadaCaravanaImg;
+    width: 250px;
+}
+
+.cancionesCaravana{
+    grid-area: cancionesCaravana;
+    list-style: none;
+    font-size: 25px;
+}
+
+/* Disco Oscuro Extasis */
+
+.discoOscuro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "tituloOscuro cancionesOscuro"
+    "portadaOscuroImg cancionesOscuro";
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.tituloOscuro{
+    grid-area: tituloOscuro;
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+}
+
+.cancionesOscuro{
+    grid-area: cancionesOscuro;
+    list-style: none;
+    font-size: 25px;
+}
+
+.portadaOscuroImg{
+    grid-area: portadaOscuroImg;
+    width: 250px;
+}
+}
+
+/* Fin estilos pantalla celulares */
+
+/* Estilos BT */
+
+.nav-link{
+    font-size: 1rem;
+    color: blueviolet;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 50px;
+    list-style: none;
+    margin: 2rem;
+}
+
+/* Estilos desktop */
+
+@media screen and (min-width: 1200px){
+
+    /* Estilos page contacto */
+
+
+    /* Estilos page merch */
+
+    .texto1{
+        display: flex;
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .tituloVinilo{
+        text-align: center;
+        margin-top: 40px;
+        
+    }
+    
+    .imagenVinilo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .viniloCaravana{
+        width: 60%;
+    }
+    
+    .catalogoMerch2{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "titulo1 titulo2 titulo3"
+            "remeraCaravana remeraOscuro remeraWos";
+        align-items: center;
+    }
+    
+    .remeraCaravana{
+        grid-area: remeraCaravana;
+        width: 80%;
+    }
+    
+    .remeraOscuro{
+        grid-area: remeraOscuro;
+        width: 300px;
+    }
+    
+    .remeraWos{
+        grid-area: remeraWos;
+        width: 280px;
+    }
+}
+
+/* Estilos del menu */
+
+.logoBuitre{
+    display: flex;
+}
+
+.menuLinks{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.menuLinks li{
+    color: blueviolet;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50px;
+    list-style: none;
+}
+
+.menuLinks li:hover{
+    box-shadow: 3px 3px blueviolet;
+    transform: scale(0.9);
+}
+
+.menuTitulo{
+    font-size: 55px;
+    text-align: left;
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.menuMenu{
+    height: auto;
+    width: auto;
+    display: flex;
+    background-color: rgb(205, 24, 24); 
+}
